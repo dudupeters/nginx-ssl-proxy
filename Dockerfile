@@ -25,7 +25,7 @@ RUN mkdir -p /etc/nginx/extra-conf.d
 
 WORKDIR /usr/src
 
-ADD start.sh /usr/src/
+ADD start.sh /usr/bin/
 ADD nginx/nginx.conf /etc/nginx/
 ADD nginx/proxy*.conf /usr/src/
 ADD nginx/extra/*.conf /etc/nginx/extra-conf.d/
